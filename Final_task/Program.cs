@@ -24,7 +24,6 @@ string[] NewArray(string[] array, int N)
     }
     return newArray;
 }
-int newArrayLength = CalcNewArrayLength(array);
 
 void PrintArray(string[] arr)
 {
@@ -36,5 +35,6 @@ void PrintArray(string[] arr)
     }
     Console.WriteLine(arr[length - 1] + "]");
 }
+int newArrayLength = CalcNewArrayLength(array);
 string[] newArray = NewArray(array, newArrayLength);
 PrintArray(newArray);
